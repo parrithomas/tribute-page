@@ -1,0 +1,48 @@
+body{
+    
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+
+}
+
+.grid {
+    display: grid;
+    width: 98%;
+    margin: 20px auto;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    grid-template: 300px 600px 1fr 150px / repeat(3, 1fr);
+
+}
+
+.title {
+    display: grid;
+    grid-area: 1 / 1 / span 1 / span 3;
+    justify-items: center;
+    justify-content: center;
+}
+
+.image{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-area: 2 / 1 / span 1 / span 3;
+    background-color: white;
+    width: 95%;
+}
+
+.timeline{
+    grid-area: 3 / 2 / span 1 / 3;
+    width: 800px;
+}
+
+.more-info{
+    grid-area: 4 / 1 / span 1 / span 3;
+}
+
+
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
